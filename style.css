@@ -9,7 +9,18 @@
     max-width: 99%;
 }
 
-/*Select menu style for Male/Female */
+.container {
+    min-width: min-content;
+    max-width: 77%;
+}
+
+.akanForm {
+    max-height: 99%%;
+    width: 100%;
+    padding: 5px;
+}
+
+/* Form Select menu style for Male/Female */
 select {
     width: 40%;
     padding: 15px 20px;
@@ -17,3 +28,5 @@ select {
     border-radius: 5px;
     border-color: lightcoral;
 }
+
+/* Form select menu style for Date of Birth */
