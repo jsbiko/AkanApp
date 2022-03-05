@@ -20,18 +20,19 @@
                 <form class="akanForm" onsubmit="return myAkanName()">
                     <label for="Gender"><strong>Your Gender:</strong></label>
                     <select id="gender" name="gender" placeholder="Choose gender" required>
-                        <option id="male-selection" value="she" required>Female</option>
-                        <option id="female-selection" value="he" required>Male</option>
+                        <option id="female-selection" value="female" required>Female</option>
+                        <option id="male-selection" value="male" required>Male</option>
                     </select><br>
                     <label for="bDay"><strong>Date of Birth:</strong></label>
-                    <label for="day"><input id="dayInput" name="month-of-birth" type="number" placeholder="Day" value="" required></label>
+                    <label for="day"><input id="dayInput" name="day-of-birth" type="number" placeholder="Day" value="" required></label>
                     <label for="month"><input id="monthInput" name="month-of-birth" type="number" placeholder="Month" value="" required></label>
-                    <label for="year"><input id="yearInput" name="month-of-birth" type="number" placeholder="Year" value="" required></label> 
+                    <label for="year"><input id="yearInput" name="year-of-birth" type="number" placeholder="Year" value="" required></label> 
                     <br>
                     <input type="submit" value="Submit">
                 </form>
                 <div class="displayAkanNames">
                     <!--Akan Name is displayed here--->
+                    <p id="result"></p>
                     <form onsubmit="return clearInput()">
                         <input class="clear" type="submit" value="Clear input">
                     </form> <!-- This clears form search-->
@@ -46,6 +47,6 @@
     </div><!--closes container div-->
 
     <!-- JS SCRIPT-->
-    <script scr="script.js"></script>
+    <script scr=".script.js"></script>
 </body>
 </html>
