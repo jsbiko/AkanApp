@@ -1,7 +1,7 @@
 /*Box Model (page layout)*/
 * {
-    background-color: transparent;
-    margin: 3%;
+    background-color: blue;
+    margin-left: 20%;
     padding:0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,8 +10,17 @@
 }
 
 .container {
+    float: left;
     min-width: min-content;
     max-width: 77%;
+}
+
+.akanDescription {
+    float: left;
+    max-width: 99%;
+    border-color: blueviolet;
+    border-width: 3px;
+    margin: 10px;
 }
 
 .akanForm {
@@ -20,6 +29,12 @@
     padding: 5px;
 }
 
+.footer {
+    max-width: 77%;
+    margin-top: 10px;
+    border: 3px;
+    background-color: aqua;
+}
 /* Form Select menu style for Male/Female */
 select {
     width: 40%;
