@@ -1,6 +1,6 @@
 /*Box Model (page layout)*/
 * {
-    margin: 2%;
+    margin: 1%;
     padding:0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,17 +16,19 @@ body{
 .container {
     float: left;
     width: 98%;
-    background-color: blue;
-    margin: 2%;
+    background-color: transparent;
+    margin: 1%;
     padding: 3%;
 }
 
 .akanDescription {
     float: left;
-    width: 90%;
+    width: 80%;
     border-color: blueviolet;
-    margin: 5% 5% 5% 3%;
+    margin: 3% 5% 5% 9%;
     background-color: brown;
+    text-decoration: solid;
+    padding: 10px;
 }
 
 .akanForm {
@@ -45,9 +47,23 @@ body{
     border: 3px;
     background-color: aqua;
 }
+
+/*Submit input*/
+input[type=submit]{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: coral;
+}
 /* Form Select menu style for Male/Female */
 select {
-    width: 30%;
+    width: 33%;
     padding: 15px 20px;
     border: none;
     border-radius: 5px;

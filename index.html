@@ -18,11 +18,24 @@
                 <p>To know your Akan name, just enter your details below and hit the button to generate!</p>
                 <p>Check your Akan Name below:</p>
                 <form>
+                    <label for="Gender"><strong>Your Gender:</strong></label>
                     <select id="gender" name="gender">
                         <option value="she">Female</option>
                         <option value="he">Male</option>
-                    </select>
+                    </select><br>
+                    <label for="bDay"><strong>Date of Birth:</strong></label>
+                    <select id="gender" name="gender">
+                        <option value="she">Female</option>
+                        <option value="he">Male</option>
+                    </select><br>
+                    <input type="submit" value="Submit">
                 </form>
+                <div class="displayAkanNames">
+                    <!--Akan Name is displayed here--->
+                    <form onsubmit="return clearInput()">
+                        <input class="clear" type="submit" value="Clear input">
+                    </form> <!-- This clears form search-->
+                </div>
             </div> <!--closes akanForm-->
 
         </div> <!--closes akanDescription-->
