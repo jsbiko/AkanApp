@@ -10,24 +10,27 @@
 
 body{
     background-image: url("accra-city.jpeg");
+    background-position: center;
 }
 
 .container {
     float: left;
     width: 98%;
     background-color: blue;
-    margin: auto;
+    margin: 2%;
+    padding: 3%;
 }
 
 .akanDescription {
     float: left;
-    width: 77%;
+    width: 90%;
     border-color: blueviolet;
-    margin: 1%;
+    margin: 5% 5% 5% 3%;
     background-color: brown;
 }
 
 .akanForm {
+    margin: 5% 1% 5% 10%;
     max-height: 99%;
     width: 69%;
     padding: 5px;
@@ -35,15 +38,16 @@ body{
 }
 
 .footer {
+    margin: 5% 5% 5% 3%;
     float: left;
-    width: 80%;
+    width: 92%;
     margin-top: 10px;
     border: 3px;
     background-color: aqua;
 }
 /* Form Select menu style for Male/Female */
 select {
-    width: 40%;
+    width: 30%;
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
