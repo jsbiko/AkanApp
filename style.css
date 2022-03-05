@@ -1,0 +1,19 @@
+/*Box Model (page layout)*/
+* {
+    background-color: transparent;
+    margin: 3%;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    max-width: 99%;
+}
+
+/*Select menu style for Male/Female */
+select {
+    width: 40%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    border-color: lightcoral;
+}
