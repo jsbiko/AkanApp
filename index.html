@@ -17,17 +17,17 @@
             <div class="akanForm">
                 <p>To know your Akan name, just enter your details below and hit the button to generate!</p>
                 <p>Check your Akan Name below:</p>
-                <form>
+                <form class="akanForm" onsubmit="return myAkanName()">
                     <label for="Gender"><strong>Your Gender:</strong></label>
                     <select id="gender" name="gender">
-                        <option value="she">Female</option>
-                        <option value="he">Male</option>
+                        <option id="male-selection" value="she" required>Female</option>
+                        <option id="female-selection" value="he" required>Male</option>
                     </select><br>
                     <label for="bDay"><strong>Date of Birth:</strong></label>
-                    <select id="gender" name="gender">
-                        <option value="she">Female</option>
-                        <option value="he">Male</option>
-                    </select><br>
+                    <label for="day"><input id="dayInput" name="month-of-birth" type="number" placeholder="Day" value="" required></label>
+                    <label for="month"><input id="monthInput" name="month-of-birth" type="number" placeholder="Month" value="" required></label>
+                    <label for="year"><input id="yearInput" name="month-of-birth" type="number" placeholder="Year" value="" required></label> 
+                    <br>
                     <input type="submit" value="Submit">
                 </form>
                 <div class="displayAkanNames">
