@@ -48,6 +48,26 @@ body{
     background-color: aqua;
 }
 
+/*Form INPUTS style*/
+#dayInput{
+   width: fit-content; 
+   border-radius: 4px;
+   height: fit-content;
+   box-shadow: 1px #01f;
+}
+#monthInput{
+    width: fit-content; 
+   border-radius: 4px;
+   height: fit-content;
+   box-shadow: 1px  #01f;
+}
+#yearInput{
+    width: fit-content; 
+   border-radius: 4px;
+   height: fit-content;
+   box-shadow: 1px #01f;
+}
+
 /*Submit input*/
 input[type=submit]{
     background-color: blueviolet;
@@ -71,3 +91,8 @@ select {
 }
 
 /* Form select menu style for Date of Birth */
+
+/* Form */
+.akanForm{
+    
+}
