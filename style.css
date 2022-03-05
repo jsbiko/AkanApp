@@ -50,19 +50,19 @@ body{
 
 /*Form INPUTS style*/
 #dayInput{
-   width: fit-content; 
+   width: 60px; 
    border-radius: 4px;
    height: fit-content;
    box-shadow: 1px #01f;
 }
 #monthInput{
-    width: fit-content; 
+    width: 60PX; 
    border-radius: 4px;
    height: fit-content;
    box-shadow: 1px  #01f;
 }
 #yearInput{
-    width: fit-content; 
+    width: 80PX; 
    border-radius: 4px;
    height: fit-content;
    box-shadow: 1px #01f;
@@ -94,5 +94,5 @@ select {
 
 /* Form */
 .akanForm{
-    
+
 }
