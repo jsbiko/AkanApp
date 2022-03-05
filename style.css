@@ -1,7 +1,6 @@
 /*Box Model (page layout)*/
 * {
-    background-color: blue;
-    margin-left: 20%;
+    margin: 2%;
     padding:0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,28 +8,35 @@
     max-width: 99%;
 }
 
+body{
+    background-image: url("accra-city.jpeg");
+}
+
 .container {
     float: left;
-    min-width: min-content;
-    max-width: 77%;
+    width: 98%;
+    background-color: blue;
+    margin: auto;
 }
 
 .akanDescription {
     float: left;
-    max-width: 99%;
+    width: 77%;
     border-color: blueviolet;
-    border-width: 3px;
-    margin: 10px;
+    margin: 1%;
+    background-color: brown;
 }
 
 .akanForm {
     max-height: 99%;
-    width: 100%;
+    width: 69%;
     padding: 5px;
+    background-color: bisque;
 }
 
 .footer {
-    max-width: 77%;
+    float: left;
+    width: 80%;
     margin-top: 10px;
     border: 3px;
     background-color: aqua;
