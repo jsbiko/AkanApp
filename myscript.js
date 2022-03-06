@@ -1,10 +1,9 @@
 // Our Akan Names based on DATE and GENDER inputs
 
 function getAkanName () {
+    let yearOfBirth = document.getElementById("yearInput").value;
     let dayOfBirth = Number(document.getElementById("dayInput").value);
     let monthOfBirth = Number(document.getElementById("monthInput").value);
-    let yearOfBirth = document.getElementById("yearInput").value;
-
     let genders = document.getElementByName("gender");
 
 // function for get the GENDER 
@@ -55,6 +54,8 @@ let dayValid = dayValidator();
 let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
 ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
+/*let dayOfWeekNumber = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7; */
+
 // Creating arrays for male and females Akan Names and the day of birth of user
 let daysOfWeek = [
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -80,13 +81,13 @@ if (dayOfWeekNumber == 0) {
 console.log(index);
 
 if (myGenderValue == "male" && monthValid && dayValid) {
-    document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index] + ", and you were born on a " + daysOfWeek[index];
+    document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index] + ", since you were born on a " + daysOfWeek[index];
     document.getElementById('display-name').textContent = "Your Akan name: ";
     document.getElementById('result').style.fontSize = "20px";
     document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
     return false;
 } else if (myGenderValue == "female" && monthValid && dayValid) {
-    document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index] + ", and you were born on a " + daysOfWeek[index];
+    document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index] + ", since you were born on a " + daysOfWeek[index];
     document.getElementById('display-name').textContent = "Your Akan Name: ";
     document.getElementById('result').style.fontSize = "20px";
     document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
