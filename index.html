@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" ></script>
     <title>Akan Web Application</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <div class="akanForm">
                 <p>To know your Akan name, just enter your details below and hit the button to generate!</p>
                 <p>Check your Akan Name below:</p>
-                <form class="akanForm" onsubmit="return myAkanName()">
+                <form class="akanForm" onsubmit="return getAkanName()">
                     <label for="Gender"><strong>Your Gender:</strong></label>
                     <select id="gender" name="gender" placeholder="Choose gender" required>
                         <option id="female-selection" name="gender" value="female" required>Female</option>
@@ -32,9 +33,10 @@
                 </form>
                 <div class="displayAkanNames">
                     <!--Akan Name is displayed here--->
+                    <h4 id="display-name"><strong>Your Akan Name will be shown below;</strong></h4>
                     <p id="result"></p>
                     <form onsubmit="return clearInput()">
-                        <input class="clear" type="submit" value="Clear input">
+                        <input class="clear" type="submit" value="Clear Form">
                     </form> <!-- This clears form search-->
                 </div>
             </div> <!--closes akanForm-->
@@ -46,7 +48,7 @@
         </div> <!-- closes footer-->
     </div><!--closes container div-->
 
-    <!-- JS SCRIPT-->
-    <script src="script.js" ></script>
+    <!-- JS SCRIPT
+    <script src="script.js" ></script>--->ß
 </body>
 </html>

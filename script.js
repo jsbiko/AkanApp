@@ -1,6 +1,6 @@
 // Our Akan Names based on DATE and GENDER inputs
 
-function myAkanName() {
+function getAkanName() {
     let dayOfBirth = Number(document.getElementById("dayInput").value);
     let monthOfBirth = Number(document.getElementById("monthInput").value);
     let yearOfBirth = document.getElementById("yearInput").value;
@@ -21,6 +21,14 @@ let myGenderValue = getGender();
 console.log(myGenderValue);
 
 // INPUT Validation functions
+function monthValidator () {
+    if (monthOfBirth < 1 || monthOfBirth > 12) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 function dayValidator () {
     if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
         if (dayOfBirth > 28 || dayOfBirth < 1) {
@@ -34,7 +42,8 @@ function dayValidator () {
         } 
     } else if (dayOfBirth < 1 || dayOfBirth > 31){
             return false;
-        } else {return true;
+        } else {
+            return true;
     }
 }
 
@@ -78,7 +87,7 @@ if (myGenderValue == "male" && monthValid && dayValid) {
     return false;
 } else if (myGenderValue == "female" && monthValid && dayValid) {
     document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index] + ", and you were born on a " + daysOfWeek[index];
-    document.getElementById('display-name').textContent = "Your Akan Name is: ";
+    document.getElementById('display-name').textContent = "Your Akan Name will be shown below: ";
     document.getElementById('result').style.fontSize = "20px";
     document.getElementById('h1').textContent = "Hello" + " " + femaleAkanNames[index];
     return false;
