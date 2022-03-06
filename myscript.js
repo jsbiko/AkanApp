@@ -94,4 +94,5 @@ if (myGenderValue == "male" && monthValid && dayValid) {
     return false;
 } else {
     alert("You entered an invalid day or month, kindly try again");
-}}
+}
+}

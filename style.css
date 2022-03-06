@@ -1,80 +1,82 @@
 /*Box Model (page layout)*/
 * {
     margin: 1%;
-    padding:0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: auto;
     max-width: 99%;
-}
-
-body{
+  }
+  
+  body {
     background-image: url("accra-city.jpeg");
     background-position: center;
-}
-
-.container {
+  }
+  
+  .container {
     float: left;
     width: 98%;
     background-color: transparent;
     margin: 1%;
     padding: 3%;
-}
-
-.akanDescription {
+  }
+  
+  .akanDescription {
     float: left;
     width: 80%;
     border-color: blueviolet;
     border-radius: 20px;
     box-shadow: 10px;
     margin: 3% 5% 5% 9%;
-    background-color:crimson;
+    background-color: crimson;
     text-decoration: solid;
     color: white;
     padding: 10px;
-}
-
-.akanForm {
+  }
+  
+  .akanForm {
     margin: 5% 1% 5% 10%;
     max-height: 99%;
     width: 69%;
     padding: 5px;
-    background-color:cornsilk;
+    background-color: cornsilk;
     color: black;
     border-radius: 5px;
-}
-
-.footer {
+  }
+  
+  .footer {
     margin: 5% 5% 5% 3%;
     float: left;
     width: 92%;
     margin-top: 10px;
     border: 3px;
     background-color: aqua;
-}
-
-/*Form INPUTS style*/
-#dayInput{
-   width: 60px; 
-   border-radius: 4px;
-   height: fit-content;
-   box-shadow: 1px #01f;
-}
-#monthInput{
-    width: 60PX; 
-   border-radius: 4px;
-   height: fit-content;
-   box-shadow: 1px  #01f;
-}
-#yearInput{
-    width: 80PX; 
-   border-radius: 4px;
-   height: fit-content;
-   box-shadow: 1px #01f;
-}
-
-/*Submit input*/
-input[type=submit]{
+  }
+  
+  /*Form INPUTS style*/
+  #dayInput {
+    width: 60px;
+    border-radius: 4px;
+    height: fit-content;
+    box-shadow: 1px #01f;
+  }
+  
+  #monthInput {
+    width: 60PX;
+    border-radius: 4px;
+    height: fit-content;
+    box-shadow: 1px #01f;
+  }
+  
+  #yearInput {
+    width: 80PX;
+    border-radius: 4px;
+    height: fit-content;
+    box-shadow: 1px #01f;
+  }
+  
+  /*Submit input*/
+  input[type=submit] {
     background-color: blueviolet;
     color: aliceblue;
     padding: 12px 20px;
@@ -82,19 +84,17 @@ input[type=submit]{
     border-radius: 5px;
     cursor: pointer;
     float: right;
-}
-input[type=submit]:hover {
+  }
+  
+  input[type=submit]:hover {
     background-color: coral;
-}
-/* Form Select menu style for Male/Female */
-select {
+  }
+  
+  /* Form Select menu style for Male/Female */
+  select {
     width: 33%;
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     border-color: lightcoral;
-}
-
-/* Form select menu style for Date of Birth */
-
-/* Form */
+  }

@@ -17,24 +17,25 @@
             <div class="akanForm">
                 <p>To know your Akan name, just enter your details below and hit the submit button to generate!</p>
                 <p>Check your Akan Name below:</p>
-                <form class="akanForm" onsubmit="return getAkanName ()">
-                    <label for="gender"><strong>Pick Gender:</strong></label>
-                
-                    <input id="female-input" name="gender" type="radio" value="female" required>Female</option>
-                    <input id="male-input" name="gender" type="radio" value="male" required>Male</option>
+                <form class="akanForm">
+                    <label for="gender"><strong>Select Gender:</strong></label>
+                      <select name="gender" id="gender" required>
+                          <option value="Female">Female</option>
+                          <option value="male">Male</option>
+                      </select>
+
                     <br>
 
                     <label for="bDay"><strong>Date of Birth:</strong></label>
-                    <label for="day-of-birth"><input id="dayInput" name="day-of-birth" type="number" placeholder="Day" value="" required></label>
-                    <label for="month-of-birth"><input id="monthInput" name="month-of-birth" type="number" placeholder="Month" value="" required></label>
-                    <label for="year-of-birth"><input id="yearInput" name="year-of-birth" type="number" placeholder="Year" value="" required></label> 
+                    <label for="b-birth"><input id="birthday" name="birthday" type="date" placeholder="Day" required></label>
                     <br>
-                    <input id="get-name" type="submit" value="Submit">
+                    <input id="submit-akan" type="submit" value="Submit">
                 </form><br><br>
 
                     <!--Akan Name is displayed here--->
-                    <h4 id = display-name>You will see your Akan Name here:</h4>
-                    <p id='result'></p>
+                    <h4 id ='display-name'>View your Akan Name here:</h4>
+                    <p id="result-name"></p>
+
                    
                 
             </div> <!--closes akanForm-->
@@ -47,6 +48,6 @@
     </div><!--closes container div-->
 
     <!-- JS SCRIPT--->
-    <script src="myscript.js"></script>
+    <script src="akan.js"></script>
 </body>
 </html>
