@@ -98,3 +98,9 @@
     border-radius: 5px;
     border-color: lightcoral;
   }
+
+  span{
+      color:mediumslateblue;
+      font-size: 25px;
+      font-weight: bolder;
+  }
