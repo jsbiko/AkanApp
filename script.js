@@ -81,13 +81,13 @@ console.log(index);
 
 if (myGenderValue == "male" && monthValid && dayValid) {
     document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index] + ", and you were born on a " + daysOfWeek[index];
-    document.getElementById('display-akaName').textContent = "Your Akan name: ";
+    document.getElementById('display-name').textContent = "Your Akan name: ";
     document.getElementById('result').style.fontSize = "20px";
     document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
     return false;
 } else if (myGenderValue == "female" && monthValid && dayValid) {
     document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index] + ", and you were born on a " + daysOfWeek[index];
-    document.getElementById('display-akanName').textContent = "Your Akan Name: ";
+    document.getElementById('display-name').textContent = "Your Akan Name: ";
     document.getElementById('result').style.fontSize = "20px";
     document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
     return false;

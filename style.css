@@ -25,9 +25,12 @@ body{
     float: left;
     width: 80%;
     border-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 10px;
     margin: 3% 5% 5% 9%;
-    background-color: brown;
+    background-color:mediumslateblue;
     text-decoration: solid;
+    color: white;
     padding: 10px;
 }
 
@@ -36,7 +39,9 @@ body{
     max-height: 99%;
     width: 69%;
     padding: 5px;
-    background-color: bisque;
+    background-color:cornsilk;
+    color: black;
+    border-radius: 5px;
 }
 
 .footer {

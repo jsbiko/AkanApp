@@ -28,6 +28,7 @@ What you will input include;
 Since this is a web application, all you need to do is visit the linked Github page link <https://jsbiko.github.io/AkanApp/>
 
 ## Known Bugs
+nONE
 
 ## Technologies Used
 
