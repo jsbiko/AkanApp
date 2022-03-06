@@ -5,11 +5,9 @@ function myAkanName() {
     let monthOfBirth = Number(document.getElementById("monthInput").value);
     let yearOfBirth = document.getElementById("yearInput").value;
 
-    let genders = document.getElementById("gender");
+    let genders = document.getElementByName("gender");
 
-}
-
-// to get GENDER 
+// function for get the GENDER 
 
 function getGender () {
     for (let gender of genders){
