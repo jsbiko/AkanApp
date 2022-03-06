@@ -18,26 +18,28 @@
                 <p>To know your Akan name, just enter your details below and hit the button to generate!</p>
                 <p>Check your Akan Name below:</p>
                 <form class="akanForm" onsubmit="return getAkanName()">
-                    <label for="Gender"><strong>Your Gender:</strong></label>
-                    <select id="gender" name="gender" placeholder="Choose gender" required>
-                        <option id="female-selection" name="gender" value="female" required>Female</option>
-                        <option id="male-selection" name="gender" value="male" required>Male</option>
-                    </select><br>
+                    <label for="gender"><strong>Pick Gender:</strong></label>
+                
+                    <input id="female-input" name="gender" type="radio" value="female" required>Female</option>
+                    <input id="male-input" name="gender" type="radio" value="male" required>Male</option>
+                    <br>
+
                     <label for="bDay"><strong>Date of Birth:</strong></label>
                     <label for="day"><input id="dayInput" name="day-of-birth" type="number" placeholder="Day" value="" required></label>
                     <label for="month"><input id="monthInput" name="month-of-birth" type="number" placeholder="Month" value="" required></label>
                     <label for="year"><input id="yearInput" name="year-of-birth" type="number" placeholder="Year" value="" required></label> 
                     <br>
-                    <input type="submit" value="Submit">
+                    <input id="get-name" type="submit" value="Submit">
                 </form>
-                <div class="displayAkanNames">
+                <form onsubmit="return clearInput()">
+                    <input class="clear" type="submit" value="Clear Form">
+                </form> <!-- This clears form search-->
+
                     <!--Akan Name is displayed here--->
-                    <h4 id="display-name"><strong>Your Akan Name will be shown below;</strong></h4>
+                    <h4 id="display-akanName"><strong>Your Akan Name will be shown below;</strong></h4>
                     <p id="result"></p>
-                    <form onsubmit="return clearInput()">
-                        <input class="clear" type="submit" value="Clear Form">
-                    </form> <!-- This clears form search-->
-                </div>
+                   
+                
             </div> <!--closes akanForm-->
 
         </div> <!--closes akanDescription-->
